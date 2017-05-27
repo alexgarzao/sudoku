@@ -17,10 +17,11 @@ Algoritmo para chegar a solução (quando não tem necessidade de tentativa e er
 * Baseado no input inicial, popula a matriz de possíveis números com os números conhecidos
 * Ajusta a matriz de possibilidades conforme o input inicial
 * Fica no laço abaixo:
+  * Ajusta a matriz de possibilidades conforme os números conhecidos
   * Se em alguma posição só ficou uma possibilidade, está resolvido esta posição. Tenta novamente.
   * Se em alguma linha só falta um número, está resolvida esta posição. Tenta novamente.
   * Se em alguma coluna só falta um número, está resolvida esta posição. Tenta novamente.
   * Se em algum agrupamento só falta um número, está resolvida esta posição. Tenta novamente.
-  * Se todos os números foram resolvidos, finish!
-  * Se algo foi alterado nesta iteração, vai para o início do laço
-  * Se nada mudou nesta iteração, sudoku sem resposta com este algoritmo :-/
+  * Se todos os números foram resolvidos, finish.
+  * Se algo foi alterado nesta iteração, vai para o início do laço.
+  * Se nada mudou nesta iteração, sudoku sem resposta com este algoritmo :-/
